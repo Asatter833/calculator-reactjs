@@ -1,11 +1,7 @@
-import { Typography } from "@mui/material";
+import CalcBody from "./components/CalcBody";
 
 function App() {
-  return (
-    <div className="App">
-      <Typography>calculator</Typography>
-    </div>
-  );
+  return <CalcBody />;
 }
 
 export default App;
