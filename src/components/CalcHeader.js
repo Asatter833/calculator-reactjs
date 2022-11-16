@@ -7,14 +7,14 @@ const CalcHeader = () => {
   return (
     <Container>
       <Stack
-        flexDirection="row"
+        direction="row"
         alignItems="center"
         justifyContent="space-between"
         sx={{ mt: 2 }}
       >
-        {/* <IconButton color={"black"} size={"small"}>
+        <IconButton color={"black"} size={"small"}>
           <Icon icon="iconoir:menu-scale" />
-        </IconButton> */}
+        </IconButton>
 
         <Typography
           variant="subtitle1"
