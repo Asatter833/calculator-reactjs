@@ -12,9 +12,9 @@ const CalcHeader = () => {
         justifyContent="space-between"
         sx={{ mt: 2 }}
       >
-        <IconButton color={"black"} size={"small"}>
+        {/* <IconButton color={"black"} size={"small"}>
           <Icon icon="iconoir:menu-scale" />
-        </IconButton>
+        </IconButton> */}
 
         <Typography
           variant="subtitle1"

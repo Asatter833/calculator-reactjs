@@ -44,7 +44,7 @@ const theme = createTheme({
       contrastText: "#fff",
     },
     white: {
-      main: "#fff",
+      main: "#E8E8E8",
       contrastText: "#2C3448",
     },
     error: {
@@ -58,37 +58,6 @@ const theme = createTheme({
   typography: {
     fontFamily: "Inter, sans-serif",
   },
-  //   components: {
-  //     MuiButton: {
-  //       styleOverrides: {
-  //         contained: {
-  //           borderRadius: "2px",
-  //           fontWeight: "500",
-  //         },
-  //       },
-  //     },
-  //     MuiSelect: {
-  //       styleOverrides: {
-  //         outlined: {
-  //           "& .MuiInputBase-input": {
-  //             backgroundColor: "rgba(0, 0, 0, 0.05)",
-  //             border: "none",
-  //             outline: "none",
-  //           },
-  //         },
-  //       },
-  //     },
-  //   },
 });
-
-theme.typography.normal = {
-  ...theme.typography.subtitle2,
-  textAlign: "justify",
-  fontWeight: "light",
-  "& a": {
-    color: theme.palette.primary.main,
-    textDecoration: "none",
-  },
-};
 
 export default theme;

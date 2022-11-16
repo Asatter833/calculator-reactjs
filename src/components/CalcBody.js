@@ -16,23 +16,46 @@ import ButtonBox from "./ButtonBox";
 
 const CalcBody = () => {
   return (
-    // <Container>
     <>
-      <Paper
-        elevation={4}
+      <Container
         sx={{
-          height: "96vh",
-          width: "500px",
-          borderRadius: "10px",
-          // bgcolor: "#1D2029",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
         }}
+        disableGutters
       >
-        <CalcHeader />
-        <DisplayScreen />
-        <Box sx={{ height: "auto", border: "2px solid #000" }}></Box>
-      </Paper>
+        <Paper
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100vh",
+            maxHeight: "896px",
+            width: "100vw",
+            maxWidth: "414px",
+            borderRadius: "20px",
+            boxShadow: {
+              xs: 0,
+              sm: 3,
+            },
+          }}
+        >
+          <CalcHeader />
+          <DisplayScreen />
+          <Box
+            sx={{
+              borderRadius: "0 0 10px 10px",
+              bgcolor: "#F0F0F0",
+              p: "5px",
+            }}
+          >
+            <ButtonBox />
+          </Box>
+        </Paper>
+      </Container>
     </>
-    // </Container>
   );
 };
 
