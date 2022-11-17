@@ -1,7 +1,9 @@
 import { Box, Container, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
+import { CalcContext } from "../context/CalcProvider";
 
 const DisplayScreen = () => {
+  const calc = React.useContext(CalcContext);
   return (
     <>
       <Container
@@ -15,7 +17,7 @@ const DisplayScreen = () => {
         }}
       >
         <Typography variant={"h5"} color="#707070">
-          308 x 42
+          {calc.prev}
         </Typography>
         <Typography
           variant={"h3"}
@@ -24,7 +26,7 @@ const DisplayScreen = () => {
             fontWeight: "500",
           }}
         >
-          12,300
+          {calc.num || 0}
         </Typography>
       </Container>
     </>

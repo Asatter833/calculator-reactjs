@@ -1,16 +1,17 @@
-import { Box, Button, CssBaseline, Paper, ThemeProvider } from "@mui/material";
-import { Container } from "@mui/system";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import CalcBody from "./components/CalcBody";
-import DisplayScreen from "./components/DisplayScreen";
-import CalcHeader from "./components/CalcHeader";
+import CalcProvider from "./context/CalcProvider";
+
 import theme from "./style/theme";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <CalcBody />
-    </ThemeProvider>
+    <CalcProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <CalcBody />
+      </ThemeProvider>
+    </CalcProvider>
   );
 }
 
