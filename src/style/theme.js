@@ -54,6 +54,9 @@ const theme = createTheme({
       main: "#F49320",
       contrastText: "#272725",
     },
+    background: {
+      default: "#e8e8e8",
+    },
   },
   typography: {
     fontFamily: "Inter, sans-serif",
