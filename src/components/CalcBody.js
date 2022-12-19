@@ -32,7 +32,7 @@ const CalcBody = () => {
             display: "flex",
             flexDirection: "column",
             height: "100vh",
-            maxHeight: "796px",
+            maxHeight: "896px",
             width: "100vw",
             maxWidth: "414px",
             borderRadius: {
