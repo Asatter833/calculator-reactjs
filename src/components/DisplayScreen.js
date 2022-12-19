@@ -47,7 +47,7 @@ const DisplayScreen = () => {
         >
           {calc.num || 0}
         </Typography> */}
-        //input
+
         <InputBase
           value={calc.num || 0}
           sx={{
