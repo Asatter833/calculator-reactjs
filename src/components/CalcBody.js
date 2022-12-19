@@ -35,7 +35,9 @@ const CalcBody = () => {
             maxHeight: "896px",
             width: "100vw",
             maxWidth: "414px",
-            borderRadius: "20px",
+            borderRadius: {
+              sm: "20px",
+            },
             boxShadow: {
               xs: 0,
               sm: 3,
