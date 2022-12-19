@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { Button, Grid } from "@mui/material";
 import CButton from "../style/CButton";
 import { Stack } from "@mui/system";
 import { CalcContext } from "../context/CalcProvider";
@@ -25,7 +24,7 @@ const ButtonBox = () => {
         calc.clear();
       },
     },
-    { btn: "%", value: "%", sx: { color: "#63C3C3" }, disabled: true },
+    { btn: "%", value: "%", sx: { color: "#63C3C3" } },
     {
       btn: <Icon icon="ph:divide-bold" />,
       value: "÷",
