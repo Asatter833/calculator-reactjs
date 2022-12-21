@@ -11,6 +11,7 @@ const CalcProvider = ({ children }) => {
     x = x?.[x.length - 1]?.split("×");
     x = x?.[x.length - 1]?.split("÷");
     x = x?.[x.length - 1]?.split("%");
+    x = x?.[x.length - 1]?.split(".");
     let y = `${num}${value}`;
     setNum(
       `${y.slice(0, y.length - x[x.length - 1].length)}${Number(
